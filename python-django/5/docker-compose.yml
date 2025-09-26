@@ -1,0 +1,44 @@
+version: '3.3'
+
+services:
+  rabbitmq:
+    image: registry.gitlab.com/qio/standard/rabbitmq:management-alpine
+
+    restart: always
+    environment:
+      RABBITMQ_DEFAULT_USER: rabbitmq_user
+      RABBITMQ_DEFAULT_PASS: rabbitmq_pass
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+
+  web:
+    build: .
+    command: gunicorn mini_quera.wsgi:application --bind 0.0.0.0:8000
+    volumes:
+      - .:/code
+      - /var/run/docker.sock:/var/run/docker.sock
+    ports:
+      - "8000:8000"
+    depends_on:
+      - rabbitmq
+      - judge_worker
+
+  celery:
+    build: .
+    command: tail -f /dev/null
+    volumes:
+      - .:/code
+      - /var/run/docker.sock:/var/run/docker.sock
+    depends_on:
+      - rabbitmq
+      - judge_worker
+
+  judge_worker:
+    build:
+      context: .
+      dockerfile: judge-worker.Dockerfile
+    container_name: judge_worker
+    volumes:
+      - ./submission_files:/judge
+    restart: always

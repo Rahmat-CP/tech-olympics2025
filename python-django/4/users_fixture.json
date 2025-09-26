@@ -1,0 +1,887 @@
+[
+  {
+    "model": "users_app.adminuser",
+    "pk": 1,
+    "fields": {
+      "firstname": "Ali",
+      "lastname": "Safari",
+      "email": "ali@example.com",
+      "phone": "+981234567890",
+      "password": "pbkdf2_sha256$260000$example$encryptedpasswordstring",
+      "national_id": "1234567890",
+      "address": "Tehran, Iran",
+      "admin_code": "ADM001",
+      "permissions_json": "{\"can_add_user\": true, \"can_delete_user\": false}",
+      "status": "active",
+      "joined_at": "2023-01-10T12:00:00Z"
+    }
+  },
+  {
+    "model": "users_app.adminuser",
+    "pk": 2,
+    "fields": {
+      "firstname": "Mohammad",
+      "lastname": "Karimi",
+      "email": "mohammad@company.com",
+      "phone": "+989123456789",
+      "password": "pbkdf2_sha256$260000$example$encryptedpasswordstring",
+      "national_id": "2345678901",
+      "address": "Mashhad, Iran",
+      "admin_code": "ADM002",
+      "permissions_json": "{\"can_add_user\": true, \"can_delete_user\": true}",
+      "status": "active",
+      "joined_at": "2023-01-15T09:00:00Z"
+    }
+  },
+  {
+    "model": "users_app.adminuser",
+    "pk": 3,
+    "fields": {
+      "firstname": "Fatemeh",
+      "lastname": "Hassani",
+      "email": "fatemeh@admin.com",
+      "phone": "+989234567890",
+      "password": "pbkdf2_sha256$260000$example$encryptedpasswordstring",
+      "national_id": "3456789012",
+      "address": "Tabriz, Iran",
+      "admin_code": "ADM003",
+      "permissions_json": "{\"can_add_user\": false, \"can_delete_user\": false}",
+      "status": "active",
+      "joined_at": "2023-02-01T11:30:00Z"
+    }
+  },
+  {
+    "model": "users_app.adminuser",
+    "pk": 4,
+    "fields": {
+      "firstname": "Hassan",
+      "lastname": "Moradi",
+      "email": "hassan@system.com",
+      "phone": "+989345678901",
+      "password": "pbkdf2_sha256$260000$example$encryptedpasswordstring",
+      "national_id": "4567890123",
+      "address": "Kerman, Iran",
+      "admin_code": "ADM004",
+      "permissions_json": "{\"can_add_user\": true, \"can_delete_user\": true}",
+      "status": "inactive",
+      "joined_at": "2023-02-10T14:15:00Z"
+    }
+  },
+  {
+    "model": "users_app.adminuser",
+    "pk": 5,
+    "fields": {
+      "firstname": "Zahra",
+      "lastname": "Nouri",
+      "email": "zahra@admin.org",
+      "phone": "+989456789012",
+      "password": "pbkdf2_sha256$260000$example$encryptedpasswordstring",
+      "national_id": "5678901234",
+      "address": "Yazd, Iran",
+      "admin_code": "ADM005",
+      "permissions_json": "{\"can_add_user\": true, \"can_delete_user\": false}",
+      "status": "active",
+      "joined_at": "2023-02-20T16:45:00Z"
+    }
+  },
+  {
+    "model": "users_app.customeruser",
+    "pk": 1,
+    "fields": {
+      "firstname": "Sara",
+      "lastname": "Azimi",
+      "email": "sara@example.com",
+      "phone": "+989123456789",
+      "password": "pbkdf2_sha256$260000$example$encryptedpasswordstring",
+      "national_id": "0987654321",
+      "address": "Isfahan, Iran",
+      "zipcode": "817961",
+      "birth_date": "1990-05-15",
+      "gender": "female",
+      "loyalty_points": 120,
+      "status": "active",
+      "joined_at": "2023-02-15T10:30:00Z"
+    }
+  },
+  {
+    "model": "users_app.customeruser",
+    "pk": 2,
+    "fields": {
+      "firstname": "Ahmad",
+      "lastname": "Rezaei",
+      "email": "ahmad@email.com",
+      "phone": "+989234567890",
+      "password": "pbkdf2_sha256$260000$example$encryptedpasswordstring",
+      "national_id": "1987654321",
+      "address": "Tehran, Iran",
+      "zipcode": "123456",
+      "birth_date": "1985-08-22",
+      "gender": "male",
+      "loyalty_points": 85,
+      "status": "active",
+      "joined_at": "2023-03-01T08:20:00Z"
+    }
+  },
+  {
+    "model": "users_app.customeruser",
+    "pk": 3,
+    "fields": {
+      "firstname": "Maryam",
+      "lastname": "Kazemi",
+      "email": "maryam@customer.com",
+      "phone": "+989345678901",
+      "password": "pbkdf2_sha256$260000$example$encryptedpasswordstring",
+      "national_id": "2987654321",
+      "address": "Shiraz, Iran",
+      "zipcode": "713456",
+      "birth_date": "1992-12-03",
+      "gender": "female",
+      "loyalty_points": 200,
+      "status": "active",
+      "joined_at": "2023-03-05T13:10:00Z"
+    }
+  },
+  {
+    "model": "users_app.customeruser",
+    "pk": 4,
+    "fields": {
+      "firstname": "Ali",
+      "lastname": "Mohammadi",
+      "email": "ali.m@user.com",
+      "phone": "+989456789012",
+      "password": "pbkdf2_sha256$260000$example$encryptedpasswordstring",
+      "national_id": "3987654321",
+      "address": "Mashhad, Iran",
+      "zipcode": "917456",
+      "birth_date": "1988-04-18",
+      "gender": "male",
+      "loyalty_points": 45,
+      "status": "active",
+      "joined_at": "2023-03-10T15:30:00Z"
+    }
+  },
+  {
+    "model": "users_app.customeruser",
+    "pk": 5,
+    "fields": {
+      "firstname": "Narges",
+      "lastname": "Ahmadi",
+      "email": "narges@mail.com",
+      "phone": "+989567890123",
+      "password": "pbkdf2_sha256$260000$example$encryptedpasswordstring",
+      "national_id": "4987654321",
+      "address": "Tabriz, Iran",
+      "zipcode": "513456",
+      "birth_date": "1995-07-25",
+      "gender": "female",
+      "loyalty_points": 300,
+      "status": "active",
+      "joined_at": "2023-03-15T12:45:00Z"
+    }
+  },
+  {
+    "model": "users_app.customeruser",
+    "pk": 6,
+    "fields": {
+      "firstname": "Reza",
+      "lastname": "Sadeghi",
+      "email": "reza@client.com",
+      "phone": "+989678901234",
+      "password": "pbkdf2_sha256$260000$example$encryptedpasswordstring",
+      "national_id": "5987654321",
+      "address": "Kerman, Iran",
+      "zipcode": "761234",
+      "birth_date": "1987-11-12",
+      "gender": "male",
+      "loyalty_points": 75,
+      "status": "inactive",
+      "joined_at": "2023-03-20T09:15:00Z"
+    }
+  },
+  {
+    "model": "users_app.customeruser",
+    "pk": 7,
+    "fields": {
+      "firstname": "Fatemeh",
+      "lastname": "Hosseini",
+      "email": "fatemeh@user.org",
+      "phone": "+989789012345",
+      "password": "pbkdf2_sha256$260000$example$encryptedpasswordstring",
+      "national_id": "6987654321",
+      "address": "Yazd, Iran",
+      "zipcode": "891234",
+      "birth_date": "1993-02-28",
+      "gender": "female",
+      "loyalty_points": 150,
+      "status": "active",
+      "joined_at": "2023-03-25T14:20:00Z"
+    }
+  },
+  {
+    "model": "users_app.customeruser",
+    "pk": 8,
+    "fields": {
+      "firstname": "Hassan",
+      "lastname": "Nouri",
+      "email": "hassan@customer.net",
+      "phone": "+989890123456",
+      "password": "pbkdf2_sha256$260000$example$encryptedpasswordstring",
+      "national_id": "7987654321",
+      "address": "Ahvaz, Iran",
+      "zipcode": "613456",
+      "birth_date": "1989-06-14",
+      "gender": "male",
+      "loyalty_points": 95,
+      "status": "active",
+      "joined_at": "2023-03-30T11:00:00Z"
+    }
+  },
+  {
+    "model": "users_app.customeruser",
+    "pk": 9,
+    "fields": {
+      "firstname": "Zahra",
+      "lastname": "Moradi",
+      "email": "zahra@email.ir",
+      "phone": "+989901234567",
+      "password": "pbkdf2_sha256$260000$example$encryptedpasswordstring",
+      "national_id": "8987654321",
+      "address": "Rasht, Iran",
+      "zipcode": "413456",
+      "birth_date": "1991-09-07",
+      "gender": "female",
+      "loyalty_points": 180,
+      "status": "active",
+      "joined_at": "2023-04-01T16:30:00Z"
+    }
+  },
+  {
+    "model": "users_app.customeruser",
+    "pk": 10,
+    "fields": {
+      "firstname": "Mohammad",
+      "lastname": "Karimi",
+      "email": "mohammad@user.ir",
+      "phone": "+989012345678",
+      "password": "pbkdf2_sha256$260000$example$encryptedpasswordstring",
+      "national_id": "9987654321",
+      "address": "Kermanshah, Iran",
+      "zipcode": "671234",
+      "birth_date": "1986-01-20",
+      "gender": "male",
+      "loyalty_points": 60,
+      "status": "suspended",
+      "joined_at": "2023-04-05T10:45:00Z"
+    }
+  },
+  {
+    "model": "users_app.vendoruser",
+    "pk": 1,
+    "fields": {
+      "firstname": "Reza",
+      "lastname": "Gholami",
+      "email": "reza@shop.com",
+      "phone": "+989122223333",
+      "password": "pbkdf2_sha256$260000$example$encryptedpasswordstring",
+      "national_id": "1122334455",
+      "address": "Shiraz, Iran",
+      "shop_name": "Reza Electronics",
+      "shop_address": "Shiraz, Ferdowsi Street",
+      "shop_license_number": "LIC12345",
+      "shop_phone": "+987112223344",
+      "rating": 4.5,
+      "is_verified": true,
+      "status": "active",
+      "joined_at": "2023-03-20T14:00:00Z"
+    }
+  },
+  {
+    "model": "users_app.vendoruser",
+    "pk": 2,
+    "fields": {
+      "firstname": "Ahmad",
+      "lastname": "Shopkeeper",
+      "email": "ahmad@store.com",
+      "phone": "+989133334444",
+      "password": "pbkdf2_sha256$260000$example$encryptedpasswordstring",
+      "national_id": "2233445566",
+      "address": "Tehran, Iran",
+      "shop_name": "Ahmad Fashion Store",
+      "shop_address": "Tehran, Valiasr Street",
+      "shop_license_number": "LIC23456",
+      "shop_phone": "+982112345678",
+      "rating": 4.2,
+      "is_verified": true,
+      "status": "active",
+      "joined_at": "2023-03-22T09:30:00Z"
+    }
+  },
+  {
+    "model": "users_app.vendoruser",
+    "pk": 3,
+    "fields": {
+      "firstname": "Maryam",
+      "lastname": "Boutique",
+      "email": "maryam@boutique.com",
+      "phone": "+989144445555",
+      "password": "pbkdf2_sha256$260000$example$encryptedpasswordstring",
+      "national_id": "3344556677",
+      "address": "Isfahan, Iran",
+      "shop_name": "Maryam Boutique",
+      "shop_address": "Isfahan, Chahar Bagh Street",
+      "shop_license_number": "LIC34567",
+      "shop_phone": "+983112345678",
+      "rating": 4.8,
+      "is_verified": true,
+      "status": "active",
+      "joined_at": "2023-03-25T11:15:00Z"
+    }
+  },
+  {
+    "model": "users_app.vendoruser",
+    "pk": 4,
+    "fields": {
+      "firstname": "Ali",
+      "lastname": "TechStore",
+      "email": "ali@tech.com",
+      "phone": "+989155556666",
+      "password": "pbkdf2_sha256$260000$example$encryptedpasswordstring",
+      "national_id": "4455667788",
+      "address": "Mashhad, Iran",
+      "shop_name": "Ali Tech Store",
+      "shop_address": "Mashhad, Imam Reza Street",
+      "shop_license_number": "LIC45678",
+      "shop_phone": "+985112345678",
+      "rating": 4.0,
+      "is_verified": false,
+      "status": "active",
+      "joined_at": "2023-03-28T13:45:00Z"
+    }
+  },
+  {
+    "model": "users_app.vendoruser",
+    "pk": 5,
+    "fields": {
+      "firstname": "Narges",
+      "lastname": "Bookstore",
+      "email": "narges@books.com",
+      "phone": "+989166667777",
+      "password": "pbkdf2_sha256$260000$example$encryptedpasswordstring",
+      "national_id": "5566778899",
+      "address": "Tabriz, Iran",
+      "shop_name": "Narges Bookstore",
+      "shop_address": "Tabriz, Saat Square",
+      "shop_license_number": "LIC56789",
+      "shop_phone": "+984112345678",
+      "rating": 4.6,
+      "is_verified": true,
+      "status": "active",
+      "joined_at": "2023-04-01T15:20:00Z"
+    }
+  },
+  {
+    "model": "users_app.vendoruser",
+    "pk": 6,
+    "fields": {
+      "firstname": "Hassan",
+      "lastname": "SportsShop",
+      "email": "hassan@sports.com",
+      "phone": "+989177778888",
+      "password": "pbkdf2_sha256$260000$example$encryptedpasswordstring",
+      "national_id": "6677889900",
+      "address": "Kerman, Iran",
+      "shop_name": "Hassan Sports Shop",
+      "shop_address": "Kerman, Shohada Square",
+      "shop_license_number": "LIC67890",
+      "shop_phone": "+983412345678",
+      "rating": 4.3,
+      "is_verified": true,
+      "status": "inactive",
+      "joined_at": "2023-04-03T10:00:00Z"
+    }
+  },
+  {
+    "model": "users_app.vendoruser",
+    "pk": 7,
+    "fields": {
+      "firstname": "Fatemeh",
+      "lastname": "Jewelry",
+      "email": "fatemeh@jewelry.com",
+      "phone": "+989188889999",
+      "password": "pbkdf2_sha256$260000$example$encryptedpasswordstring",
+      "national_id": "7788990011",
+      "address": "Yazd, Iran",
+      "shop_name": "Fatemeh Jewelry",
+      "shop_address": "Yazd, Amir Chakhmaq Square",
+      "shop_license_number": "LIC78901",
+      "shop_phone": "+983512345678",
+      "rating": 4.7,
+      "is_verified": true,
+      "status": "active",
+      "joined_at": "2023-04-05T12:30:00Z"
+    }
+  },
+  {
+    "model": "users_app.vendoruser",
+    "pk": 8,
+    "fields": {
+      "firstname": "Zahra",
+      "lastname": "HomeDecor",
+      "email": "zahra@decor.com",
+      "phone": "+989199990000",
+      "password": "pbkdf2_sha256$260000$example$encryptedpasswordstring",
+      "national_id": "8899001122",
+      "address": "Ahvaz, Iran",
+      "shop_name": "Zahra Home Decor",
+      "shop_address": "Ahvaz, Karoon Street",
+      "shop_license_number": "LIC89012",
+      "shop_phone": "+986112345678",
+      "rating": 4.1,
+      "is_verified": false,
+      "status": "active",
+      "joined_at": "2023-04-08T14:15:00Z"
+    }
+  },
+  {
+    "model": "users_app.vendoruser",
+    "pk": 9,
+    "fields": {
+      "firstname": "Mohammad",
+      "lastname": "AutoParts",
+      "email": "mohammad@autoparts.com",
+      "phone": "+989200001111",
+      "password": "pbkdf2_sha256$260000$example$encryptedpasswordstring",
+      "national_id": "9900112233",
+      "address": "Rasht, Iran",
+      "shop_name": "Mohammad Auto Parts",
+      "shop_address": "Rasht, Golsar Street",
+      "shop_license_number": "LIC90123",
+      "shop_phone": "+981312345678",
+      "rating": 4.4,
+      "is_verified": true,
+      "status": "active",
+      "joined_at": "2023-04-10T16:45:00Z"
+    }
+  },
+  {
+    "model": "users_app.vendoruser",
+    "pk": 10,
+    "fields": {
+      "firstname": "Sara",
+      "lastname": "BeautyShop",
+      "email": "sara@beauty.com",
+      "phone": "+989211112222",
+      "password": "pbkdf2_sha256$260000$example$encryptedpasswordstring",
+      "national_id": "0011223344",
+      "address": "Kermanshah, Iran",
+      "shop_name": "Sara Beauty Shop",
+      "shop_address": "Kermanshah, Taq-e Bostan Street",
+      "shop_license_number": "LIC01234",
+      "shop_phone": "+988312345678",
+      "rating": 4.9,
+      "is_verified": true,
+      "status": "active",
+      "joined_at": "2023-04-12T08:30:00Z"
+    }
+  },
+  {
+    "model": "users_app.customeruser",
+    "pk": 11,
+    "fields": {
+      "firstname": "Ahmad",
+      "lastname": "Nasseri",
+      "email": "ahmad.n@email.com",
+      "phone": "+989322223333",
+      "password": "pbkdf2_sha256$260000$example$encryptedpasswordstring",
+      "national_id": "1122334455",
+      "address": "Qom, Iran",
+      "zipcode": "371234",
+      "birth_date": "1994-03-10",
+      "gender": "male",
+      "loyalty_points": 25,
+      "status": "active",
+      "joined_at": "2023-04-15T09:20:00Z"
+    }
+  },
+  {
+    "model": "users_app.customeruser",
+    "pk": 12,
+    "fields": {
+      "firstname": "Leila",
+      "lastname": "Mousavi",
+      "email": "leila@customer.com",
+      "phone": "+989433334444",
+      "password": "pbkdf2_sha256$260000$example$encryptedpasswordstring",
+      "national_id": "2233445566",
+      "address": "Hamadan, Iran",
+      "zipcode": "651234",
+      "birth_date": "1983-10-05",
+      "gender": "female",
+      "loyalty_points": 400,
+      "status": "active",
+      "joined_at": "2023-04-18T11:45:00Z"
+    }
+  },
+  {
+    "model": "users_app.customeruser",
+    "pk": 13,
+    "fields": {
+      "firstname": "Hossein",
+      "lastname": "Rahmani",
+      "email": "hossein@user.net",
+      "phone": "+989544445555",
+      "password": "pbkdf2_sha256$260000$example$encryptedpasswordstring",
+      "national_id": "3344556677",
+      "address": "Zanjan, Iran",
+      "zipcode": "451234",
+      "birth_date": "1996-08-17",
+      "gender": "male",
+      "loyalty_points": 80,
+      "status": "active",
+      "joined_at": "2023-04-20T13:15:00Z"
+    }
+  },
+  {
+    "model": "users_app.customeruser",
+    "pk": 14,
+    "fields": {
+      "firstname": "Roya",
+      "lastname": "Kiani",
+      "email": "roya@mail.org",
+      "phone": "+989655556666",
+      "password": "pbkdf2_sha256$260000$example$encryptedpasswordstring",
+      "national_id": "4455667788",
+      "address": "Ardabil, Iran",
+      "zipcode": "561234",
+      "birth_date": "1992-12-22",
+      "gender": "female",
+      "loyalty_points": 220,
+      "status": "active",
+      "joined_at": "2023-04-22T15:30:00Z"
+    }
+  },
+  {
+    "model": "users_app.customeruser",
+    "pk": 15,
+    "fields": {
+      "firstname": "Mehdi",
+      "lastname": "Soltani",
+      "email": "mehdi@client.com",
+      "phone": "+989766667777",
+      "password": "pbkdf2_sha256$260000$example$encryptedpasswordstring",
+      "national_id": "5566778899",
+      "address": "Sanandaj, Iran",
+      "zipcode": "661234",
+      "birth_date": "1988-05-30",
+      "gender": "male",
+      "loyalty_points": 110,
+      "status": "inactive",
+      "joined_at": "2023-04-25T10:00:00Z"
+    }
+  },
+  {
+    "model": "users_app.customeruser",
+    "pk": 16,
+    "fields": {
+      "firstname": "Shadi",
+      "lastname": "Ahmadi",
+      "email": "shadi@email.ir",
+      "phone": "+989877778888",
+      "password": "pbkdf2_sha256$260000$example$encryptedpasswordstring",
+      "national_id": "6677889900",
+      "address": "Ilam, Iran",
+      "zipcode": "693456",
+      "birth_date": "1995-01-14",
+      "gender": "female",
+      "loyalty_points": 65,
+      "status": "active",
+      "joined_at": "2023-04-28T12:20:00Z"
+    }
+  },
+  {
+    "model": "users_app.customeruser",
+    "pk": 17,
+    "fields": {
+      "firstname": "Arash",
+      "lastname": "Ghorbani",
+      "email": "arash@user.ir",
+      "phone": "+989988889999",
+      "password": "pbkdf2_sha256$260000$example$encryptedpasswordstring",
+      "national_id": "7788990011",
+      "address": "Khorramabad, Iran",
+      "zipcode": "681234",
+      "birth_date": "1987-07-08",
+      "gender": "male",
+      "loyalty_points": 140,
+      "status": "active",
+      "joined_at": "2023-05-01T14:45:00Z"
+    }
+  },
+  {
+    "model": "users_app.customeruser",
+    "pk": 18,
+    "fields": {
+      "firstname": "Neda",
+      "lastname": "Faraji",
+      "email": "neda@customer.net",
+      "phone": "+989099990000",
+      "password": "pbkdf2_sha256$260000$example$encryptedpasswordstring",
+      "national_id": "8899001122",
+      "address": "Birjand, Iran",
+      "zipcode": "971234",
+      "birth_date": "1993-11-26",
+      "gender": "female",
+      "loyalty_points": 90,
+      "status": "active",
+      "joined_at": "2023-05-03T16:10:00Z"
+    }
+  },
+  {
+    "model": "users_app.customeruser",
+    "pk": 19,
+    "fields": {
+      "firstname": "Pouya",
+      "lastname": "Ebrahimi",
+      "email": "pouya@mail.com",
+      "phone": "+989100001111",
+      "password": "pbkdf2_sha256$260000$example$encryptedpasswordstring",
+      "national_id": "9900112233",
+      "address": "Bojnurd, Iran",
+      "zipcode": "941234",
+      "birth_date": "1990-04-12",
+      "gender": "male",
+      "loyalty_points": 170,
+      "status": "suspended",
+      "joined_at": "2023-05-05T11:30:00Z"
+    }
+  },
+  {
+    "model": "users_app.customeruser",
+    "pk": 20,
+    "fields": {
+      "firstname": "Sima",
+      "lastname": "Danesh",
+      "email": "sima@user.org",
+      "phone": "+989211112222",
+      "password": "pbkdf2_sha256$260000$example$encryptedpasswordstring",
+      "national_id": "0011223344",
+      "address": "Gorgan, Iran",
+      "zipcode": "491234",
+      "birth_date": "1991-09-18",
+      "gender": "female",
+      "loyalty_points": 35,
+      "status": "active",
+      "joined_at": "2023-05-08T13:25:00Z"
+    }
+  },
+  {
+    "model": "users_app.vendoruser",
+    "pk": 11,
+    "fields": {
+      "firstname": "Reza",
+      "lastname": "Pharmacy",
+      "email": "reza@pharmacy.com",
+      "phone": "+989322223333",
+      "password": "pbkdf2_sha256$260000$example$encryptedpasswordstring",
+      "national_id": "1122334455",
+      "address": "Qom, Iran",
+      "shop_name": "Reza Pharmacy",
+      "shop_address": "Qom, Imam Khomeini Street",
+      "shop_license_number": "LIC12345",
+      "shop_phone": "+982512345678",
+      "rating": 4.8,
+      "is_verified": true,
+      "status": "active",
+      "joined_at": "2023-05-10T09:15:00Z"
+    }
+  },
+  {
+    "model": "users_app.vendoruser",
+    "pk": 12,
+    "fields": {
+      "firstname": "Leila",
+      "lastname": "FlowerShop",
+      "email": "leila@flowers.com",
+      "phone": "+989433334444",
+      "password": "pbkdf2_sha256$260000$example$encryptedpasswordstring",
+      "national_id": "2233445566",
+      "address": "Hamadan, Iran",
+      "shop_name": "Leila Flower Shop",
+      "shop_address": "Hamadan, Bu Ali Sina Street",
+      "shop_license_number": "LIC23456",
+      "shop_phone": "+988112345678",
+      "rating": 4.5,
+      "is_verified": true,
+      "status": "active",
+      "joined_at": "2023-05-12T11:40:00Z"
+    }
+  },
+  {
+    "model": "users_app.vendoruser",
+    "pk": 13,
+    "fields": {
+      "firstname": "Hossein",
+      "lastname": "Hardware",
+      "email": "hossein@hardware.com",
+      "phone": "+989544445555",
+      "password": "pbkdf2_sha256$260000$example$encryptedpasswordstring",
+      "national_id": "3344556677",
+      "address": "Zanjan, Iran",
+      "shop_name": "Hossein Hardware Store",
+      "shop_address": "Zanjan, Imam Square",
+      "shop_license_number": "LIC34567",
+      "shop_phone": "+982412345678",
+      "rating": 4.2,
+      "is_verified": false,
+      "status": "active",
+      "joined_at": "2023-05-15T14:20:00Z"
+    }
+  },
+  {
+    "model": "users_app.vendoruser",
+    "pk": 14,
+    "fields": {
+      "firstname": "Roya",
+      "lastname": "Cafe",
+      "email": "roya@cafe.com",
+      "phone": "+989655556666",
+      "password": "pbkdf2_sha256$260000$example$encryptedpasswordstring",
+      "national_id": "4455667788",
+      "address": "Ardabil, Iran",
+      "shop_name": "Roya Cafe",
+      "shop_address": "Ardabil, Sheikh Safi Street",
+      "shop_license_number": "LIC45678",
+      "shop_phone": "+984512345678",
+      "rating": 4.6,
+      "is_verified": true,
+      "status": "active",
+      "joined_at": "2023-05-18T16:50:00Z"
+    }
+  },
+  {
+    "model": "users_app.vendoruser",
+    "pk": 15,
+    "fields": {
+      "firstname": "Mehdi",
+      "lastname": "Stationery",
+      "email": "mehdi@stationery.com",
+      "phone": "+989766667777",
+      "password": "pbkdf2_sha256$260000$example$encryptedpasswordstring",
+      "national_id": "5566778899",
+      "address": "Sanandaj, Iran",
+      "shop_name": "Mehdi Stationery",
+      "shop_address": "Sanandaj, Kurdistan Street",
+      "shop_license_number": "LIC56789",
+      "shop_phone": "+988712345678",
+      "rating": 4.0,
+      "is_verified": true,
+      "status": "inactive",
+      "joined_at": "2023-05-20T10:30:00Z"
+    }
+  },
+  {
+    "model": "users_app.vendoruser",
+    "pk": 16,
+    "fields": {
+      "firstname": "Shadi",
+      "lastname": "PetShop",
+      "email": "shadi@pets.com",
+      "phone": "+989877778888",
+      "password": "pbkdf2_sha256$260000$example$encryptedpasswordstring",
+      "national_id": "6677889900",
+      "address": "Ilam, Iran",
+      "shop_name": "Shadi Pet Shop",
+      "shop_address": "Ilam, Valiasr Street",
+      "shop_license_number": "LIC67890",
+      "shop_phone": "+988412345678",
+      "rating": 4.7,
+      "is_verified": true,
+      "status": "active",
+      "joined_at": "2023-05-22T12:15:00Z"
+    }
+  },
+  {
+    "model": "users_app.vendoruser",
+    "pk": 17,
+    "fields": {
+      "firstname": "Arash",
+      "lastname": "Grocery",
+      "email": "arash@grocery.com",
+      "phone": "+989988889999",
+      "password": "pbkdf2_sha256$260000$example$encryptedpasswordstring",
+      "national_id": "7788990011",
+      "address": "Khorramabad, Iran",
+      "shop_name": "Arash Grocery Store",
+      "shop_address": "Khorramabad, Shohada Square",
+      "shop_license_number": "LIC78901",
+      "shop_phone": "+986612345678",
+      "rating": 4.3,
+      "is_verified": false,
+      "status": "active",
+      "joined_at": "2023-05-25T15:45:00Z"
+    }
+  },
+  {
+    "model": "users_app.vendoruser",
+    "pk": 18,
+    "fields": {
+      "firstname": "Neda",
+      "lastname": "Bakery",
+      "email": "neda@bakery.com",
+      "phone": "+989099990000",
+      "password": "pbkdf2_sha256$260000$example$encryptedpasswordstring",
+      "national_id": "8899001122",
+      "address": "Birjand, Iran",
+      "shop_name": "Neda Bakery",
+      "shop_address": "Birjand, Imam Square",
+      "shop_license_number": "LIC89012",
+      "shop_phone": "+985612345678",
+      "rating": 4.9,
+      "is_verified": true,
+      "status": "active",
+      "joined_at": "2023-05-28T08:20:00Z"
+    }
+  },
+  {
+    "model": "users_app.vendoruser",
+    "pk": 19,
+    "fields": {
+      "firstname": "Pouya",
+      "lastname": "Optics",
+      "email": "pouya@optics.com",
+      "phone": "+989100001111",
+      "password": "pbkdf2_sha256$260000$example$encryptedpasswordstring",
+      "national_id": "9900112233",
+      "address": "Bojnurd, Iran",
+      "shop_name": "Pouya Optics",
+      "shop_address": "Bojnurd, Ferdowsi Street",
+      "shop_license_number": "LIC90123",
+      "shop_phone": "+985812345678",
+      "rating": 4.4,
+      "is_verified": true,
+      "status": "active",
+      "joined_at": "2023-05-30T11:00:00Z"
+    }
+  },
+  {
+    "model": "users_app.vendoruser",
+    "pk": 20,
+    "fields": {
+      "firstname": "Sima",
+      "lastname": "Furniture",
+      "email": "sima@furniture.com",
+      "phone": "+989211112222",
+      "password": "pbkdf2_sha256$260000$example$encryptedpasswordstring",
+      "national_id": "0011223344",
+      "address": "Gorgan, Iran",
+      "shop_name": "Sima Furniture Store",
+      "shop_address": "Gorgan, Shariati Street",
+      "shop_license_number": "LIC01234",
+      "shop_phone": "+981712345678",
+      "rating": 4.1,
+      "is_verified": false,
+      "status": "active",
+      "joined_at": "2023-06-01T13:35:00Z"
+    }
+  }
+]
