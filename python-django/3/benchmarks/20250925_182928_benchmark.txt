@@ -1,0 +1,15 @@
+# Benchmark: 20250925_182928
+Functional Equivalence: Yes
+
+Original Code Stats:
+   Lines     : 4
+   Characters: 54
+   File Size : 54 bytes
+   Run Time  : 0.1017 sec
+
+Obfuscated Code Stats:
+   Lines     : 15
+   Characters: 119
+   File Size : 119 bytes
+   Run Time  : 0.1041 sec
+
